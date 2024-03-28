@@ -1,2 +1,6 @@
-langchain
-unstructured # Document loading
+langchain==0.1.13
+langchain_community==0.0.29
+langchain_core==0.1.36
+langchain_text_splitters==0.0.1
+unstructured[md]==0.12.6
+faiss-cpu==1.8.0
