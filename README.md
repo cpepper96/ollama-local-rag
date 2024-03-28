@@ -1,8 +1,10 @@
-# Langchain RAG Tutorial
+# Langchain RAG Project
 
 This repository provides an example of implementing Retrieval-Augmented Generation (RAG) using LangChain and Ollama. The RAG approach combines the strengths of an LLM with a retrieval system (in this case, FAISS) to allow the model to access and incorporate external information during the generation process.
 
 The application will load any Markdown documents in the `docs/` directory. As an example this directory has two documents on Amazon Bedrock and Knowledge Bases for Amazon Bedrock. Since these products were released in the last 6 months their documentation was not included in the training data for most popular LLMs. 
+
+Credit to [pixegami](https://github.com/pixegami/langchain-rag-tutorial) for the inspiration for this project.
 
 ## LangChain
 
