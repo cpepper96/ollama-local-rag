@@ -1,0 +1,2 @@
+langchain
+unstructured # Document loading
