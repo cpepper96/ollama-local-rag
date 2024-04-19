@@ -17,7 +17,7 @@ def main():
 def generate_data_store():
     documents = load_documents()
     chunks = split_text(documents)
-    save_to_chroma(chunks)
+    save_to_faiss(chunks)
 
 
 def load_documents():
@@ -43,13 +43,13 @@ def split_text(documents: list[Document]):
     return chunks
 
 
-def save_to_chroma(chunks: list[Document]):
+def save_to_faiss(chunks: list[Document]):
     # Clear out the database first.
     if os.path.exists(FAISS_PATH):
         shutil.rmtree(FAISS_PATH)
 
     # Initilize embedding model
-    embeddings = OllamaEmbeddings(model="llama2:13b") 
+    embeddings = OllamaEmbeddings(model="mxbai-embed-large") 
 
     # Create a new DB from the documents.
     db = FAISS.from_documents(chunks, embeddings)

@@ -1,6 +1,6 @@
-langchain==0.1.13
-langchain_community==0.0.29
-langchain_core==0.1.36
+langchain==0.1.16
+langchain_community==0.0.33
+langchain_core==0.1.45
 langchain_text_splitters==0.0.1
-unstructured[md]==0.12.6
+unstructured[md]==0.13.2
 faiss-cpu==1.8.0
